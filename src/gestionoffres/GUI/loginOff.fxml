@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionoffres.GUI.LoginOffController">
+   <children>
+      <Button fx:id="btnlog" layoutX="217.0" layoutY="129.0" mnemonicParsing="false" onAction="#logOffre" prefHeight="58.0" prefWidth="254.0" text="Gérer mes offres" textFill="RED">
+         <font>
+            <Font name="Verdana Pro Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect></Button>
+      <Button fx:id="btngerliv" layoutX="217.0" layoutY="242.0" mnemonicParsing="false" onAction="#gérerlivraison" prefHeight="58.0" prefWidth="254.0" text="Gérer les livraisons" textFill="RED">
+         <font>
+            <Font name="Verdana Pro Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect></Button>
+      <ImageView fitHeight="423.0" fitWidth="709.0" layoutY="-8.0" opacity="0.24" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/552.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="im22" fitHeight="419.0" fitWidth="171.0" layoutX="538.0" opacity="0.68" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/325035503_1259701034888950_8230381732615192624_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="im2" fitHeight="423.0" fitWidth="171.0" layoutY="-2.0" opacity="0.73" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/325035503_1259701034888950_8230381732615192624_n.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

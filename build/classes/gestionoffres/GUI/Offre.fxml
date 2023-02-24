@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionoffres.GUI.OffreController">
+   <children>
+      <Label layoutX="32.0" layoutY="69.0" text="id_offre" textFill="RED" textOverrun="CLIP" underline="true" />
+      <Label layoutX="24.0" layoutY="230.0" text="id_conducteur" textFill="RED" underline="true" />
+      <Label layoutX="32.0" layoutY="123.0" text="Destination" textFill="RED" underline="true" />
+      <Label layoutX="26.0" layoutY="294.0" text="pt_depart" textFill="RED" underline="true" />
+      <Label layoutX="32.0" layoutY="179.0" text="Prix" textFill="RED" underline="true" />
+      <Label layoutX="26.0" layoutY="349.0" text="type_vehicule" textFill="RED" underline="true" />
+      <TextField fx:id="tfid_offre" layoutX="124.0" layoutY="66.0" />
+      <TextField fx:id="tfdestination" layoutX="124.0" layoutY="119.0" />
+      <TextField fx:id="tfprix" layoutX="124.0" layoutY="175.0" />
+      <TextField fx:id="tfid_conducteur" layoutX="124.0" layoutY="235.0" />
+      <TextField fx:id="tfpt_depart" layoutX="124.0" layoutY="290.0" />
+      <TextField fx:id="tftype_vehicule" layoutX="124.0" layoutY="345.0" />
+      <Button fx:id="btncreer" layoutX="327.0" layoutY="104.0" mnemonicParsing="false" onAction="#creer_offre" prefHeight="30.0" prefWidth="211.0" text="Créer une offre ">
+         <effect>
+            <Reflection />
+         </effect></Button>
+      <Label layoutX="55.0" layoutY="14.0" opacity="0.36" textAlignment="CENTER" textFill="#f20606">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnmodifier" layoutX="327.0" layoutY="160.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="30.0" prefWidth="211.0" text="Modifier une offre ">
+         <effect>
+            <Reflection />
+         </effect></Button>
+      <Button fx:id="btnsupprimer" layoutX="327.0" layoutY="215.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#SuppOffre" prefHeight="30.0" prefWidth="211.0" text="Supprimer une offre">
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect></Button>
+      <Button fx:id="afficheroff" layoutX="327.0" layoutY="275.0" mnemonicParsing="false" onAction="#afficherOff" prefHeight="30.0" prefWidth="211.0" text="Afficher les offres">
+         <effect>
+            <Reflection />
+         </effect></Button>
+      <ImageView fitHeight="408.0" fitWidth="602.0" layoutY="-2.0" opacity="0.28" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/552.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

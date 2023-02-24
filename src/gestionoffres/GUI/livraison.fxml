@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionoffres.GUI.LivraisonController">
+   <children>
+      <Label layoutX="20.0" layoutY="50.0" text="id_livraison" textFill="RED">
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="20.0" layoutY="89.0" text="Addresse_liv" textFill="RED">
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="20.0" layoutY="127.0" text="Destinataire" textFill="RED">
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="20.0" layoutY="167.0" text="Poids" textFill="RED">
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="20.0" layoutY="206.0" text="Contenu" textFill="RED">
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="20.0" layoutY="245.0" text="Prix_liv" textFill="RED">
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <TextField fx:id="tflid_livraison" layoutX="102.0" layoutY="46.0" />
+      <TextField fx:id="tfladdresse_liv" layoutX="102.0" layoutY="85.0" />
+      <TextField fx:id="tfldestinataire" layoutX="102.0" layoutY="123.0" />
+      <TextField fx:id="tflpoids" layoutX="102.0" layoutY="163.0" />
+      <TextField fx:id="tflcontenu" layoutX="102.0" layoutY="202.0" />
+      <TextField fx:id="tflprix_liv" layoutX="102.0" layoutY="241.0" />
+      <Button fx:id="btnAjouterLiv" layoutX="23.0" layoutY="289.0" mnemonicParsing="false" onAction="#AjouterLivraison" prefHeight="26.0" prefWidth="229.0" text="Ajouter une livraison" />
+      <Button fx:id="btnModifierLiv" layoutX="23.0" layoutY="315.0" mnemonicParsing="false" onAction="#ModifierLivraison" prefHeight="26.0" prefWidth="230.0" text="Modifier une livraison" />
+      <Button fx:id="btnsuppliv" layoutX="23.0" layoutY="341.0" mnemonicParsing="false" onAction="#SupprimerLivraison" prefHeight="26.0" prefWidth="230.0" text="Supprimer une livraison" />
+      <Button fx:id="btnAffLiv" layoutX="24.0" layoutY="367.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="230.0" text="Afficher ma livraison " />
+      <ImageView fitHeight="410.0" fitWidth="600.0" opacity="0.08" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/552.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="410.0" fitWidth="242.0" layoutX="358.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/325035503_1259701034888950_8230381732615192624_n.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
